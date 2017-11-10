@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
+import items from "./data";
+import Pin from "./Pin";
 
 const token =
   "pk.eyJ1IjoiZ3NhbGxlcyIsImEiOiJjajl0OHZlaGcweWFzMzNqemUwMzRxeXpwIn0.RpgPgPCUEQv88iMEpMSGVA";
@@ -10,9 +12,9 @@ class App extends Component {
   state = {
     mapStyle: "mapbox://styles/mapbox/dark-v9",
     viewport: {
-      latitude: 37.805,
-      longitude: -122.447,
-      zoom: 15.5,
+      latitude: 37.785164,
+      longitude: -100,
+      zoom: 3.5,
       bearing: 0,
       pitch: 0,
       width: 500,
@@ -41,6 +43,18 @@ class App extends Component {
     });
   };
 
+  _renderCityMarker = (item, index) => {
+    return (
+      <Marker
+        key={`marker-${index}`}
+        longitude={item.longitude}
+        latitude={item.latitude}
+      >
+        <Pin size={20} />
+      </Marker>
+    );
+  };
+
   render() {
     const { viewport, mapStyle } = this.state;
     return (
@@ -49,7 +63,9 @@ class App extends Component {
         mapStyle={mapStyle}
         mapboxApiAccessToken={token}
         onViewportChange={this._onViewportChange}
-      />
+      >
+        {items.map(this._renderCityMarker)}
+      </ReactMapGL>
     );
   }
 }
