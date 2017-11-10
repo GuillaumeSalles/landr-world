@@ -7,19 +7,47 @@ const token =
   "pk.eyJ1IjoiZ3NhbGxlcyIsImEiOiJjajl0OHZlaGcweWFzMzNqemUwMzRxeXpwIn0.RpgPgPCUEQv88iMEpMSGVA";
 
 class App extends Component {
+  state = {
+    mapStyle: "",
+    viewport: {
+      latitude: 37.805,
+      longitude: -122.447,
+      zoom: 15.5,
+      bearing: 0,
+      pitch: 0,
+      width: 500,
+      height: 500
+    }
+  };
+
+  _onViewportChange = viewport => this.setState({ viewport });
+
+  componentDidMount() {
+    window.addEventListener("resize", this._resize);
+    this._resize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this._resize);
+  }
+
+  _resize = () => {
+    this.setState({
+      viewport: {
+        ...this.state.viewport,
+        width: this.props.width || window.innerWidth,
+        height: this.props.height || window.innerHeight
+      }
+    });
+  };
+
   render() {
+    const { viewport, mapStyle } = this.state;
     return (
       <ReactMapGL
-        width={window.innerWidth}
-        height={window.innerHeight}
-        latitude={37.805}
-        longitude={-122.447}
-        zoom={8}
+        {...viewport}
         mapboxApiAccessToken={token}
-        onViewportChange={viewport => {
-          const { width, height, latitude, longitude, zoom } = viewport;
-          // Optionally call `setState` and use the state to update the map.
-        }}
+        onViewportChange={this._onViewportChange}
       />
     );
   }
