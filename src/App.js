@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import "mapbox-gl/dist/mapbox-gl.css";
 import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
 import items from "./data";
 import Pin from "./Pin";
@@ -72,6 +73,10 @@ class App extends Component {
         onViewportChange={this._onViewportChange}
       >
         {items.map(this._renderCityMarker)}
+
+        <div style={{ position: "absolute", right: 10, top: 10 }}>
+          <NavigationControl onViewportChange={this._onViewportChange} />
+        </div>
       </ReactMapGL>
     );
   }
