@@ -8,7 +8,7 @@ const token =
 
 class App extends Component {
   state = {
-    mapStyle: "",
+    mapStyle: "mapbox://styles/mapbox/dark-v9",
     viewport: {
       latitude: 37.805,
       longitude: -122.447,
@@ -46,6 +46,7 @@ class App extends Component {
     return (
       <ReactMapGL
         {...viewport}
+        mapStyle={mapStyle}
         mapboxApiAccessToken={token}
         onViewportChange={this._onViewportChange}
       />
