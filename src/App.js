@@ -8,6 +8,13 @@ import Pin from "./Pin";
 const token =
   "pk.eyJ1IjoiZ3NhbGxlcyIsImEiOiJjajl0OHZlaGcweWFzMzNqemUwMzRxeXpwIn0.RpgPgPCUEQv88iMEpMSGVA";
 
+const navStyle = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  padding: "10px"
+};
+
 class App extends Component {
   state = {
     mapStyle: "mapbox://styles/mapbox/dark-v9",
