@@ -9,7 +9,7 @@ body {
   right: 0;
   max-width: 320px;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 12px 24px;
   margin: 20px;
   font-size: 13px;
@@ -26,4 +26,48 @@ label {
 
 input {
   margin-left: 20px;
+}
+
+.side-panel {
+  position: absolute;
+  height: 100%;
+  width: 280px;
+  color: white;
+  padding: 42px 36px;
+  background: linear-gradient(90deg, #0f1e2d, rgba(0, 0, 0, 0));
+}
+
+.top-artists {
+  margin-top: 25px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.stat {
+  margin-bottom: 20px;
+}
+
+.stat-value {
+  font-size: 48px;
+}
+
+.stat-title {
+  font-size: 28px;
+  color: #4c6173;
+}
+
+.artist-container {
+  margin-bottom: 20px;
+}
+
+.artist-name {
+  font-size: 15px;
+}
+
+.artist-streams {
+  font-size: 18px;
+  color: #4c6173;
 }
