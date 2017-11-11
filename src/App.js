@@ -30,19 +30,22 @@ const artists = items.map(d => {
   if (d["Cover release 1"]) {
     releases.push({
       cover: d["Cover release 1"],
-      link: d["Release 1"]
+      link: d["Release 1"],
+      name: d["Release Name 1"]
     });
   }
   if (d["Cover release 2"]) {
     releases.push({
       cover: d["Cover release 2"],
-      link: d["Release 2"]
+      link: d["Release 2"],
+      name: d["Release Name 2"]
     });
   }
   if (d["Cover release 3"]) {
     releases.push({
       cover: d["Cover release 3"],
-      link: d["Release 3"]
+      link: d["Release 3"],
+      name: d["Release Name 3"]
     });
   }
   return {
@@ -55,68 +58,36 @@ const artists = items.map(d => {
       d["Cover release 1"] ||
       "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
     streams: d["Streams"],
-    downloads: d["Downloads"] ? d["Downloads"] : "10K",
+    downloads: d["Downloads"],
     releases: releases,
+    genre: d["Genre"],
     description:
+      d["Bio"] ||
       "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights."
   };
 });
 
-// const artists = [
-//   {
-//     name: "Prime",
-//     streams: 4200000,
-//     downloads: 230000,
-//     latitude: 48.866667,
-//     longitude: 2.333333,
-//     description:
-//       "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights.",
-//     cover:
-//       "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
-//     picture:
-//       "http://www.dimensionsfestival.com/wp-content/uploads/2017/02/moderat_use.jpg",
-//     city: "Paris",
-//     country: "France",
-//     releases: [
-//       {
-//         cover:
-//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-//       },
-//       {
-//         cover:
-//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-//       },
-//       {
-//         cover:
-//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-//       }
-//     ]
-//   },
-//   {
-//     name: "Marvin Beker",
-//     streams: 55878,
-//     latitude: 34.0194,
-//     longitude: -118.4108
-//   },
-//   {
-//     name: "Marvin Beker",
-//     streams: 55878,
-//     latitude: 41.8376,
-//     longitude: -87.6818
-//   },
-//   {
-//     name: "Marvin Beker",
-//     streams: 55878,
-//     latitude: 29.7805,
-//     longitude: -95.3863
-//   },
-//   {
-//     name: "Marvin Beker",
-//     streams: 55878,
-//     latitude: 33.5722,
-//     longitude: -112.088
-//   }
-// ];
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+function formatNumber(number) {
+  if (number == null) {
+    number = getRandomInt(100, 10000000);
+  }
+
+  if (number < 1000) {
+    return number;
+  }
+
+  if (number < 1000000) {
+    return (number / 1000).toFixed(1) + "k";
+  }
+
+  return (number / 1000000).toFixed(1) + "m";
+}
 
 function take(items, number) {
   const result = [];
@@ -137,14 +108,15 @@ class App extends Component {
       width: 500,
       height: 500
     },
-    selectedArtist: artists[0],
-    artistPanelIsOpen: true
+    selectedArtist: null,
+    artistPanelIsOpen: false
   };
 
   _onViewportChange = viewport => this.setState({ viewport });
 
   componentDidMount() {
     window.addEventListener("resize", this._resize);
+    window.inter;
     this._resize();
   }
 
@@ -204,12 +176,12 @@ class App extends Component {
           <div className="subtitle">Stats</div>
 
           <div className="stat">
-            <div className="stat-value">11K</div>
+            <div className="stat-value">{formatNumber(12000)}</div>
             <div className="stat-title">Artists</div>
           </div>
 
           <div className="stat">
-            <div className="stat-value">13.2M</div>
+            <div className="stat-value">{formatNumber(3120000)}</div>
             <div className="stat-title">streams</div>
           </div>
 
@@ -218,7 +190,9 @@ class App extends Component {
             {take(artists, 5).map(artist => (
               <div className="artist-container">
                 <div className="artist-name">{artist.name}</div>
-                <div className="artist-streams">{artist.streams}</div>
+                <div className="artist-streams">
+                  {formatNumber(artist.streams)}
+                </div>
               </div>
             ))}
           </div>
@@ -256,7 +230,14 @@ class App extends Component {
                 <img src={youtube} />
               </div>
               <div className="artist-info">
-                <h1> {this.state.selectedArtist.name}</h1>
+                <div style={{ display: "flex", marginBottom: "10px" }}>
+                  <div className="artist-name">
+                    {this.state.selectedArtist.name}
+                  </div>
+                  <div className="artist-genre">
+                    {this.state.selectedArtist.genre}
+                  </div>
+                </div>
                 <div className="artist-description">
                   {this.state.selectedArtist.description}
                 </div>
@@ -265,14 +246,14 @@ class App extends Component {
                 <div> {this.state.selectedArtist.location} </div>
                 <div className="artist-stats">
                   <span className="artist-stats-title">Stream : </span>
-                  {this.state.selectedArtist.streams}
+                  {formatNumber(this.state.selectedArtist.streams)}
                   <span
                     className="artist-stats-title"
                     style={{ marginLeft: "10px" }}
                   >
                     Downloads : {" "}
                   </span>
-                  {this.state.selectedArtist.downloads}
+                  {formatNumber(this.state.selectedArtist.downloads)}
                 </div>
 
                 <div
@@ -281,13 +262,16 @@ class App extends Component {
                 >
                   Releases{" "}
                 </div>
-                <div>
+                <div style={{ display: "flex" }}>
                   {this.state.selectedArtist.releases.map(release => (
-                    <img
-                      className="release-cover"
-                      src={release.cover}
-                      onClick={() => window.open(release.link)}
-                    />
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <img
+                        className="release-cover"
+                        src={release.cover}
+                        onClick={() => window.open(release.link)}
+                      />
+                      <div style={{ marginTop: "5px" }}>{release.name}</div>
+                    </div>
                   ))}
                 </div>
               </div>

@@ -41,10 +41,12 @@ export default [
     Youtube: "",
     Streams: 30600,
     Downloads: 135,
-    "Release 1": "https://open.spotify.com/track/4Apo5Kxl1hHtfkCYl45VFg",
+    "Release 1": "https://artist.landr.com/music/800739121461",
+    "Release Name 1": "Freedom",
     "Cover release 1":
       "https://api2.landr.com/distribution/api/v1/distributions/c251cf4e-e7c2-43d0-8776-df4252fe8383/cover?width=360&height=360&_timestamp=",
-    "Release 2": "https://open.spotify.com/track/371N0DXoehezgAwraLeSVn",
+    "Release 2": "https://artist.landr.com/music/800739121195",
+    "Release Name 2": "Loving Life",
     "Cover release 2":
       "https://api2.landr.com/distribution/api/v1/distributions/b28ab9b3-24e9-42b7-988e-f845afd962d6/cover?width=360&height=360&_timestamp=",
     Genre: "Electronic",
