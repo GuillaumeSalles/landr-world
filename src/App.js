@@ -231,7 +231,7 @@ class App extends Component {
               </div>
               <div className="artist-info">
                 <div style={{ display: "flex", marginBottom: "10px" }}>
-                  <div className="artist-name">
+                  <div className="artist-info-name">
                     {this.state.selectedArtist.name}
                   </div>
                   <div className="artist-genre">
