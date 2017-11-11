@@ -11,6 +11,7 @@ import youtube from "./youtube.svg";
 import soundcloud from "./soundcloud.svg";
 import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
+import defaultImage from "./Artboard Copy 4.png";
 
 const mapStyle = makeStyleMap();
 
@@ -49,8 +50,10 @@ const artists = items.map(d => {
     latitude: d.Latitude,
     longitude: d.Longitude,
     releases: [],
-    picture: d["Artist picture"],
-    cover: d["Cover release 1"],
+    picture: d["Artist picture"] || defaultImage,
+    cover:
+      d["Cover release 1"] ||
+      "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
     streams: d["Streams"],
     downloads: d["Downloads"] ? d["Downloads"] : "10K",
     releases: releases,
