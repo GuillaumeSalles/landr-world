@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-4" transform="translate(-1202.000000, -459.000000)" fill-rule="nonzero" fill="#142739">
+            <g id="Group-28" transform="translate(900.000000, 0.000000)">
+                <g id="Group-15" transform="translate(186.000000, 450.000000)">
+                    <g id="Group-23">
+                        <g id="Group-2-Copy-3" transform="translate(109.000000, 0.000000)">
+                            <g id="logo-youtube" transform="translate(7.000000, 9.000000)">
+                                <path d="M15.8,2.8 C15.6,1.5 15,0.6 13.6,0.4 C11.4,0 8,0 8,0 C8,0 4.6,0 2.4,0.4 C1,0.6 0.3,1.5 0.2,2.8 C0,4.1 0,6 0,6 C0,6 0,7.9 0.2,9.2 C0.4,10.5 1,11.4 2.4,11.6 C4.6,12 8,12 8,12 C8,12 11.4,12 13.6,11.6 C15,11.3 15.6,10.5 15.8,9.2 C16,7.9 16,6 16,6 C16,6 16,4.1 15.8,2.8 Z M6,9 L6,3 L11,6 L6,9 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

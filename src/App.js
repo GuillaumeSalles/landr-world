@@ -6,6 +6,11 @@ import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
 import items from "./data";
 import Pin from "./Pin";
 import makeStyleMap from "./makeStyleMap";
+import close from "./ic_close_black_24px.svg";
+import youtube from "./youtube.svg";
+import soundcloud from "./soundcloud.svg";
+import twitter from "./twitter.svg";
+import facebook from "./facebook.svg";
 
 const mapStyle = makeStyleMap();
 
@@ -20,11 +25,59 @@ const navStyle = {
 };
 
 const artists = [
-  { name: "Marvin Beker", streams: 55878 },
-  { name: "Marvin Beker", streams: 55878 },
-  { name: "Marvin Beker", streams: 55878 },
-  { name: "Marvin Beker", streams: 55878 },
-  { name: "Marvin Beker", streams: 55878 }
+  {
+    name: "Prime",
+    streams: 4200000,
+    downloads: 230000,
+    latitude: 48.866667,
+    longitude: 2.333333,
+    description:
+      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights.",
+    cover:
+      "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
+    picture:
+      "http://www.dimensionsfestival.com/wp-content/uploads/2017/02/moderat_use.jpg",
+    city: "Paris",
+    country: "France",
+    releases: [
+      {
+        cover:
+          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+      },
+      {
+        cover:
+          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+      },
+      {
+        cover:
+          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+      }
+    ]
+  },
+  {
+    name: "Marvin Beker",
+    streams: 55878,
+    latitude: 34.0194,
+    longitude: -118.4108
+  },
+  {
+    name: "Marvin Beker",
+    streams: 55878,
+    latitude: 41.8376,
+    longitude: -87.6818
+  },
+  {
+    name: "Marvin Beker",
+    streams: 55878,
+    latitude: 29.7805,
+    longitude: -95.3863
+  },
+  {
+    name: "Marvin Beker",
+    streams: 55878,
+    latitude: 33.5722,
+    longitude: -112.088
+  }
 ];
 
 class App extends Component {
@@ -37,7 +90,9 @@ class App extends Component {
       pitch: 0,
       width: 500,
       height: 500
-    }
+    },
+    selectedArtist: artists[0],
+    artistPanelIsOpen: true
   };
 
   _onViewportChange = viewport => this.setState({ viewport });
@@ -51,8 +106,8 @@ class App extends Component {
     window.removeEventListener("resize", this._resize);
   }
 
-  handlePinClick() {
-    return;
+  handlePinClick(artist) {
+    this.setState({ artistPanelIsOpen: true, selectedArtist: artist });
   }
 
   _resize = () => {
@@ -65,16 +120,23 @@ class App extends Component {
     });
   };
 
-  _renderCityMarker = (item, index) => {
+  _renderArtistMarker = (item, index) => {
     return (
       <Marker
         key={`marker-${index}`}
         longitude={item.longitude}
         latitude={item.latitude}
       >
-        <Pin size={20} onClick={this.handlePinClick} />
+        <Pin size={20} onClick={() => this.handlePinClick(item)} />
       </Marker>
     );
+  };
+
+  closeArtistPanel = () => {
+    this.setState({ artistPanelIsOpen: null });
+    setTimeout(() => {
+      this.setState({ selectedArtist: null });
+    }, 300);
   };
 
   render() {
@@ -86,7 +148,7 @@ class App extends Component {
         mapboxApiAccessToken={token}
         onViewportChange={this._onViewportChange}
       >
-        {items.map(this._renderCityMarker)}
+        {artists.map(this._renderArtistMarker)}
 
         <div style={{ position: "absolute", right: 10, top: 10 }}>
           <NavigationControl onViewportChange={this._onViewportChange} />
@@ -114,6 +176,73 @@ class App extends Component {
               </div>
             ))}
           </div>
+        </div>
+        <div
+          className="artist-panel"
+          style={{
+            transform: this.state.artistPanelIsOpen
+              ? "translateX(0px)"
+              : "translateX(540px)"
+          }}
+        >
+          {this.state.selectedArtist && (
+            <div>
+              <button
+                className="artist-panel-close"
+                onClick={this.closeArtistPanel}
+              >
+                <img src={close} />
+              </button>
+              <div className="artist-cover-container">
+                <img
+                  className="artist-cover"
+                  src={this.state.selectedArtist.cover}
+                />
+              </div>
+              <img
+                className="artist-picture"
+                src={this.state.selectedArtist.picture}
+              />
+              <div className="artist-social">
+                <img src={facebook} />
+                <img src={twitter} />
+                <img src={soundcloud} />
+                <img src={youtube} />
+              </div>
+              <div className="artist-info">
+                <h1> {this.state.selectedArtist.name}</h1>
+                <div className="artist-description">
+                  {this.state.selectedArtist.description}
+                </div>
+
+                <div className="separator" />
+                <div> {this.state.selectedArtist.location} </div>
+                <div className="artist-stats">
+                  <span className="artist-stats-title">Stream : </span>
+                  {this.state.selectedArtist.streams}
+                  <span
+                    className="artist-stats-title"
+                    style={{ marginLeft: "10px" }}
+                  >
+                    Downloads : {" "}
+                  </span>
+                  {this.state.selectedArtist.downloads}
+                </div>
+
+                <div
+                  className="artist-stats-title"
+                  style={{ margin: "10px 0" }}
+                >
+                  Releases{" "}
+                </div>
+                <div>
+                  {this.state.selectedArtist.releases.map(release => (
+                    <img className="release-cover" src={release.cover} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </ReactMapGL>
     );
