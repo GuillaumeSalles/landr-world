@@ -24,61 +24,104 @@ const navStyle = {
   padding: "10px"
 };
 
-const artists = [
-  {
-    name: "Prime",
-    streams: 4200000,
-    downloads: 230000,
-    latitude: 48.866667,
-    longitude: 2.333333,
-    description:
-      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights.",
-    cover:
-      "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
-    picture:
-      "http://www.dimensionsfestival.com/wp-content/uploads/2017/02/moderat_use.jpg",
-    city: "Paris",
-    country: "France",
-    releases: [
-      {
-        cover:
-          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-      },
-      {
-        cover:
-          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-      },
-      {
-        cover:
-          "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
-      }
-    ]
-  },
-  {
-    name: "Marvin Beker",
-    streams: 55878,
-    latitude: 34.0194,
-    longitude: -118.4108
-  },
-  {
-    name: "Marvin Beker",
-    streams: 55878,
-    latitude: 41.8376,
-    longitude: -87.6818
-  },
-  {
-    name: "Marvin Beker",
-    streams: 55878,
-    latitude: 29.7805,
-    longitude: -95.3863
-  },
-  {
-    name: "Marvin Beker",
-    streams: 55878,
-    latitude: 33.5722,
-    longitude: -112.088
+const artists = items.map(d => {
+  var releases = [];
+  if (d["Cover release 1"]) {
+    releases.push({
+      cover: d["Cover release 1"],
+      link: d["Release 1"]
+    });
   }
-];
+  if (d["Cover release 2"]) {
+    releases.push({
+      cover: d["Cover release 2"],
+      link: d["Release 2"]
+    });
+  }
+  if (d["Cover release 3"]) {
+    releases.push({
+      cover: d["Cover release 3"],
+      link: d["Release 3"]
+    });
+  }
+  return {
+    name: d["Artist name"],
+    latitude: d.Latitude,
+    longitude: d.Longitude,
+    releases: [],
+    picture: d["Artist picture"],
+    cover: d["Cover release 1"],
+    streams: d["Streams"],
+    downloads: d["Downloads"] ? d["Downloads"] : "10K",
+    releases: releases,
+    description:
+      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights."
+  };
+});
+
+// const artists = [
+//   {
+//     name: "Prime",
+//     streams: 4200000,
+//     downloads: 230000,
+//     latitude: 48.866667,
+//     longitude: 2.333333,
+//     description:
+//       "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights.",
+//     cover:
+//       "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
+//     picture:
+//       "http://www.dimensionsfestival.com/wp-content/uploads/2017/02/moderat_use.jpg",
+//     city: "Paris",
+//     country: "France",
+//     releases: [
+//       {
+//         cover:
+//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+//       },
+//       {
+//         cover:
+//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+//       },
+//       {
+//         cover:
+//           "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg"
+//       }
+//     ]
+//   },
+//   {
+//     name: "Marvin Beker",
+//     streams: 55878,
+//     latitude: 34.0194,
+//     longitude: -118.4108
+//   },
+//   {
+//     name: "Marvin Beker",
+//     streams: 55878,
+//     latitude: 41.8376,
+//     longitude: -87.6818
+//   },
+//   {
+//     name: "Marvin Beker",
+//     streams: 55878,
+//     latitude: 29.7805,
+//     longitude: -95.3863
+//   },
+//   {
+//     name: "Marvin Beker",
+//     streams: 55878,
+//     latitude: 33.5722,
+//     longitude: -112.088
+//   }
+// ];
+
+function take(items, number) {
+  const result = [];
+  for (var i = 0; i < number; i++) {
+    result.push(items[i]);
+  }
+  return result;
+}
 
 class App extends Component {
   state = {
@@ -169,7 +212,7 @@ class App extends Component {
 
           <div className="top-artists">
             <div className="subtitle">Top Artists</div>
-            {artists.map(artist => (
+            {take(artists, 5).map(artist => (
               <div className="artist-container">
                 <div className="artist-name">{artist.name}</div>
                 <div className="artist-streams">{artist.streams}</div>
@@ -237,7 +280,11 @@ class App extends Component {
                 </div>
                 <div>
                   {this.state.selectedArtist.releases.map(release => (
-                    <img className="release-cover" src={release.cover} />
+                    <img
+                      className="release-cover"
+                      src={release.cover}
+                      onClick={() => window.open(release.link)}
+                    />
                   ))}
                 </div>
               </div>

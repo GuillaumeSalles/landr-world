@@ -1,182 +1,207 @@
 export default [
   {
-    city: "New York",
-    population: "8,175,133",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/240px-Above_Gotham.jpg",
-    state: "New York",
-    latitude: 40.6643,
-    longitude: -73.9385
+    "User ID": "868d4fa7-dfaf-4d3f-ae3d-5f6e598f94bc",
+    "Artist name": "Prime",
+    Email: "amine.mekri@gmail.com",
+    Pays: "France",
+    Ville: "Paris",
+    Latitude: 48.866667,
+    Longitude: 2.333333,
+    Bio: "Love Hip-Hop",
+    Facebook: "",
+    Twitter: "",
+    Soundcloud: "http://soundcloud.com/primetimefut",
+    Youtube: "",
+    Streams: 4200000,
+    Downloads: "",
+    "Release 1": "https://open.spotify.com/track/5LyTC7Pvu7Bo2WCSw6X5pj",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/adfe3d74-7c3b-403a-bf5f-e3bd93eb5177/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/track/4auECpxeYE41XSI6YnVCVN",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/6b470412-404b-490f-8c73-7d1b0c7e46f6/cover?width=360&height=360&_timestamp=",
+    Genre: "Hip-Hop / Rap",
+    "Artist picture":
+      "https://www.landr.com/api/v1/users/868d4fa7-dfaf-4d3f-ae3d-5f6e598f94bc/pictures/profile/360x360",
+    "": ""
   },
   {
-    city: "Los Angeles",
-    population: "3,792,621",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/LA_Skyline_Mountains2.jpg/240px-LA_Skyline_Mountains2.jpg",
-    state: "California",
-    latitude: 34.0194,
-    longitude: -118.4108
+    "User ID": "ceba79c7-6f34-4647-98fa-0526cfefb60c",
+    "Artist name": "Valdi Sabev",
+    Email: "valdisabev@gmail.com",
+    Pays: "Bulgaria",
+    Ville: "Sofia",
+    Latitude: 42.6977082,
+    Longitude: 23.3218675,
+    Bio:
+      "Hey, I am Valdi Sabev and I make chilled Electronic Music. Follow me and Enjoy the tunes. Check out my Website: www.valdisabev.com",
+    Facebook: "https://www.facebook.com/valdisabevofficial/",
+    Twitter: "https://twitter.com/valdisabev/status/917967579456688129",
+    Soundcloud: "https://soundcloud.com/valdisabev",
+    Youtube: "",
+    Streams: 30600,
+    Downloads: 135,
+    "Release 1": "https://open.spotify.com/track/4Apo5Kxl1hHtfkCYl45VFg",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/c251cf4e-e7c2-43d0-8776-df4252fe8383/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/track/371N0DXoehezgAwraLeSVn",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/b28ab9b3-24e9-42b7-988e-f845afd962d6/cover?width=360&height=360&_timestamp=",
+    Genre: "Electronic",
+    "Artist picture":
+      "https://www.landr.com/api/v1/users/ceba79c7-6f34-4647-98fa-0526cfefb60c/pictures/profile/360x360",
+    "": ""
   },
   {
-    city: "Chicago",
-    population: "2,695,598",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2008-06-10_3000x1000_chicago_skyline.jpg/240px-2008-06-10_3000x1000_chicago_skyline.jpg",
-    state: "Illinois",
-    latitude: 41.8376,
-    longitude: -87.6818
+    "User ID": "6c30ae88-4a14-416e-a341-6d3185ec813b",
+    "Artist name": "DJ IBG",
+    Email: "ianbgallagher@gmail.com",
+    Pays: "United States",
+    Ville: "New Haven",
+    Latitude: 41.308274,
+    Longitude: -72.9278835,
+    Bio: "",
+    Facebook: "https://www.facebook.com/djibgmusic/",
+    Twitter: "https://twitter.com/ibg_music",
+    Soundcloud: "https://soundcloud.com/dj-ibg",
+    Youtube: "",
+    Streams: 274,
+    Downloads: 3,
+    "Release 1": "https://open.spotify.com/album/3mvPpo0yNKP2tTQu6w5YgP",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/8816efea-3339-49f3-b2d4-dc1ebfcc119c/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/album/2RHTpQ26pwaNXvXiTjmIfK",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/b010e129-9a7f-49c2-a608-8049ee9f2a13/cover?width=360&height=360&_timestamp=",
+    Genre: "Electronic",
+    "Artist picture":
+      "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-1/c50.0.200.200/p200x200/12278954_1510377832593116_2247312993787304937_n.jpg?oh=6c4c476b51e5e726bf83948cca89e93e&oe=5AA06520",
+    "": ""
   },
   {
-    city: "Houston",
-    population: "2,100,263",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg/240px-Aerial_views_of_the_Houston%2C_Texas%2C_28005u.jpg",
-    state: "Texas",
-    latitude: 29.7805,
-    longitude: -95.3863
+    "User ID": "62d1df32-315c-4732-b3b4-1551a99ec342",
+    "Artist name": "Nor wei junz",
+    Email: "drjunzzon@gmail.com",
+    Pays: "Norway",
+    Ville: "Oslo",
+    Latitude: 59.9138688,
+    Longitude: 10.7522454,
+    Bio: "",
+    Facebook: "https://www.facebook.com/norweijunz/",
+    Twitter: "https://twitter.com/norweijunz",
+    Soundcloud: "",
+    Youtube: "",
+    Streams: 40100,
+    Downloads: 0,
+    "Release 1": "https://open.spotify.com/track/21XQnGpWZvCDA8WwmcAuPV",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/7d021d32-8a69-426d-bd18-c88a511449a5/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/track/3KZI4ReyV1zKzvTov3XmSP",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/370df065-76ca-4deb-bda2-b02dd1601851/cover?width=360&height=360&_timestamp=",
+    Genre: "Electronic",
+    "Artist picture": "",
+    "": ""
   },
   {
-    city: "Phoenix",
-    population: "1,445,632",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Downtown_Phoenix_Aerial_Looking_Northeast.jpg/207px-Downtown_Phoenix_Aerial_Looking_Northeast.jpg",
-    state: "Arizona",
-    latitude: 33.5722,
-    longitude: -112.088
+    "User ID": "b042f1cb-0b7f-4dc5-88e4-e4f285633b64",
+    "Artist name": "Seatown Sync",
+    Email: "seatownsync@gmail.com",
+    Pays: "United States",
+    Ville: "Seattle",
+    Latitude: 47.6062095,
+    Longitude: -122.3320708,
+    Bio: "",
+    Facebook: "",
+    Twitter: "",
+    Soundcloud: "",
+    Youtube: "",
+    Streams: 136500,
+    Downloads: 10,
+    "Release 1": "https://itunes.apple.com/us/album/soundtrack/id1268424309",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/b2724398-5a65-44c6-ae2e-2eb726ad92b0/cover?width=360&height=360&_timestamp=",
+    "Release 2": "",
+    "Cover release 2": "",
+    Genre: "Soundtrack",
+    "Artist picture": "",
+    "": ""
   },
   {
-    city: "Philadelphia",
-    population: "1,526,006",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Philly_skyline.jpg/240px-Philly_skyline.jpg",
-    state: "Pennsylvania",
-    latitude: 40.0094,
-    longitude: -75.1333
+    "User ID": "307c2323-c808-43e5-a07b-04b1f87f651d",
+    "Artist name": "JVX",
+    Email: "jvxmusiccontact@gmail.com",
+    Pays: "United States",
+    Ville: "Palmetto",
+    Latitude: 27.5214269,
+    Longitude: -82.5723193,
+    Bio: "",
+    Facebook: "",
+    Twitter: "https://twitter.com/JvxMusic",
+    Soundcloud: "http://soundcloud.com/jvxmusic",
+    Youtube: "",
+    Streams: 182,
+    Downloads: 0,
+    "Release 1": "http://www.deezer.com/us/album/45984272",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/62ee8460-8bdc-4a9d-97e3-b07da7a9ec75/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/album/3URZ3FTnI9X6FY5pBbgVZl",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/533feae7-15a3-473d-88d8-30faf462357c/cover?width=360&height=360&_timestamp=",
+    Genre: "Pop",
+    "Artist picture": "",
+    "": ""
   },
   {
-    city: "San Antonio",
-    population: "1,327,407",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Downtown_San_Antonio_View.JPG/240px-Downtown_San_Antonio_View.JPG",
-    state: "Texas",
-    latitude: 29.4724,
-    longitude: -98.5251
+    "User ID": "406ce454-61d7-423c-b508-989b123da216",
+    "Artist name": "Markvard",
+    Email: "kevinmarkenvard@gmail.com",
+    Pays: "Sweden",
+    Ville: "JÃ¶nkÃ¶ping",
+    Latitude: 57.7826137,
+    Longitude: 14.1617876,
+    Bio: "",
+    Facebook: "",
+    Twitter: "",
+    Soundcloud: "https://soundcloud.com/markvard",
+    Youtube:
+      "https://www.youtube.com/watch?v=lKtYbShnL2s&list=PLnRDg84Q_lZk-3Cmm4nrAhFGX1xgJIfIp",
+    Streams: 348100,
+    Downloads: 0,
+    "Release 1": "https://open.spotify.com/album/1VbYubyQWcqOLoNOsVVLPN",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/b3ad86eb-08ff-4715-88aa-e49ee5f5302e/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/album/1AN17XBU9Ij2kkHliKyvbr",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/00bea3ed-e457-4618-b261-a27bce937f47/cover?width=360&height=360&_timestamp=",
+    Genre: "Electronic",
+    "Artist picture": "",
+    "": ""
   },
   {
-    city: "San Diego",
-    population: "1,307,402",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/5/53/US_Navy_110604-N-NS602-574_Navy_and_Marine_Corps_personnel%2C_along_with_community_leaders_from_the_greater_San_Diego_area_come_together_to_commemora.jpg/240px-US_Navy_110604-N-NS602-574_Navy_and_Marine_Corps_personnel%2C_along_with_community_leaders_from_the_greater_San_Diego_area_come_together_to_commemora.jpg",
-    state: "California",
-    latitude: 32.8153,
-    longitude: -117.135
-  },
-  {
-    city: "Dallas",
-    population: "1,197,816",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dallas_skyline_daytime.jpg/240px-Dallas_skyline_daytime.jpg",
-    state: "Texas",
-    latitude: 32.7757,
-    longitude: -96.7967
-  },
-  {
-    city: "San Jose",
-    population: "945,942",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Downtown_San_Jose_skyline.PNG/240px-Downtown_San_Jose_skyline.PNG",
-    state: "California",
-    latitude: 37.2969,
-    longitude: -121.8193
-  },
-  {
-    city: "Austin",
-    population: "790,390",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Austin2012-12-01.JPG/240px-Austin2012-12-01.JPG",
-    state: "Texas",
-    latitude: 30.3072,
-    longitude: -97.756
-  },
-  {
-    city: "Jacksonville",
-    population: "821,784",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Skyline_of_Jacksonville_FL%2C_South_view_20160706_1.jpg/240px-Skyline_of_Jacksonville_FL%2C_South_view_20160706_1.jpg",
-    state: "Florida",
-    latitude: 30.337,
-    longitude: -81.6613
-  },
-  {
-    city: "San Francisco",
-    population: "805,235",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/San_Francisco_skyline_from_Coit_Tower.jpg/240px-San_Francisco_skyline_from_Coit_Tower.jpg",
-    state: "California",
-    latitude: 37.7751,
-    longitude: -122.4193
-  },
-  {
-    city: "Columbus",
-    population: "787,033",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Columbus-ohio-skyline-panorama.jpg/240px-Columbus-ohio-skyline-panorama.jpg",
-    state: "Ohio",
-    latitude: 39.9848,
-    longitude: -82.985
-  },
-  {
-    city: "Indianapolis",
-    population: "820,445",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Downtown_indy_from_parking_garage_zoom.JPG/213px-Downtown_indy_from_parking_garage_zoom.JPG",
-    state: "Indiana",
-    latitude: 39.7767,
-    longitude: -86.1459
-  },
-  {
-    city: "Fort Worth",
-    population: "741,206",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FortWorthTexasSkylineW.jpg/240px-FortWorthTexasSkylineW.jpg",
-    state: "Texas",
-    latitude: 32.7795,
-    longitude: -97.3463
-  },
-  {
-    city: "Charlotte",
-    population: "731,424",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Charlotte_skyline45647.jpg/222px-Charlotte_skyline45647.jpg",
-    state: "North Carolina",
-    latitude: 35.2087,
-    longitude: -80.8307
-  },
-  {
-    city: "Seattle",
-    population: "608,660",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/SeattleI5Skyline.jpg/240px-SeattleI5Skyline.jpg",
-    state: "Washington",
-    latitude: 47.6205,
-    longitude: -122.3509
-  },
-  {
-    city: "Denver",
-    population: "600,158",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/240px-DenverCP.JPG",
-    state: "Colorado",
-    latitude: 39.7618,
-    longitude: -104.8806
-  },
-  {
-    city: "El Paso",
-    population: "649,121",
-    image:
-      "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Downtown_El_Paso_at_sunset.jpeg/240px-Downtown_El_Paso_at_sunset.jpeg",
-    state: "Texas",
-    latitude: 31.8484,
-    longitude: -106.427
+    "User ID": "3a49bf53-506c-4ace-bdeb-c3ddcf32a98d",
+    "Artist name": "Dan Mervis",
+    Email: "12108stjamesrd@gmail.com",
+    Pays: "United States",
+    Ville: "Bethesda",
+    Latitude: 38.9640012,
+    Longitude: -77.067619,
+    Bio: "",
+    Facebook: "",
+    Twitter: "",
+    Soundcloud: "",
+    Youtube: "https://www.youtube.com/user/MrDanmervis",
+    Streams: 4900,
+    Downloads: 187,
+    "Release 1":
+      "https://itunes.apple.com/us/album/space-ballet-single/id1304776205",
+    "Cover release 1":
+      "https://api2.landr.com/distribution/api/v1/distributions/ef43af18-16bf-41f5-b841-5fc1643bd009/cover?width=360&height=360&_timestamp=",
+    "Release 2": "https://open.spotify.com/album/4voAZ9ZVwVFnaiDqZjyka2",
+    "Cover release 2":
+      "https://api2.landr.com/distribution/api/v1/distributions/1c69427f-fe33-47db-87c1-b0b1a25f1c16/cover?width=360&height=360&_timestamp=",
+    Genre: "Rock Electronic",
+    "Artist picture": "",
+    "": ""
   }
 ];
