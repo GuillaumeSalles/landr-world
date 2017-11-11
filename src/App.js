@@ -83,8 +83,8 @@ const artists = [
 class App extends Component {
   state = {
     viewport: {
-      latitude: 37.785164,
-      longitude: -100,
+      latitude: 48.866667,
+      longitude: 2.333333,
       zoom: 3.5,
       bearing: 0,
       pitch: 0,
