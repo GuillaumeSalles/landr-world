@@ -29,6 +29,7 @@ input {
 }
 
 .side-panel {
+  z-index: 1;
   position: absolute;
   height: 100%;
   width: 280px;
@@ -73,6 +74,7 @@ input {
 }
 
 .artist-panel {
+  z-index: 10;
   position: absolute;
   height: 100%;
   width: 540px;

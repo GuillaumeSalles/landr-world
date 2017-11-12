@@ -2,21 +2,30 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "mapbox-gl/dist/mapbox-gl.css";
-import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
 import items from "./data";
-import Pin from "./Pin";
-import makeStyleMap from "./makeStyleMap";
 import close from "./ic_close_black_24px.svg";
 import youtube from "./youtube.svg";
 import soundcloud from "./soundcloud.svg";
 import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
 import defaultImage from "./Artboard Copy 4.png";
+import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
 
-const mapStyle = makeStyleMap();
+const POSITION_CIRCLE_PAINT = {
+  "circle-stroke-width": 5,
+  "circle-radius": 5,
+  "circle-blur": 0,
+  "circle-color": "#84E0E0",
+  "circle-stroke-color": "#5BD5D5",
+  "circle-stroke-opacity": 0.5
+};
 
 const token =
   "pk.eyJ1IjoiZ3NhbGxlcyIsImEiOiJjajl0OHZlaGcweWFzMzNqemUwMzRxeXpwIn0.RpgPgPCUEQv88iMEpMSGVA";
+
+const Map = ReactMapboxGl({
+  accessToken: token
+});
 
 const navStyle = {
   position: "absolute",
@@ -99,54 +108,21 @@ function take(items, number) {
 
 class App extends Component {
   state = {
-    viewport: {
-      latitude: 48.866667,
-      longitude: 2.333333,
-      zoom: 3.5,
-      bearing: 0,
-      pitch: 0,
-      width: 500,
-      height: 500
-    },
     selectedArtist: null,
     artistPanelIsOpen: false
   };
-
-  _onViewportChange = viewport => this.setState({ viewport });
-
-  componentDidMount() {
-    window.addEventListener("resize", this._resize);
-    window.inter;
-    this._resize();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this._resize);
-  }
 
   handlePinClick(artist) {
     this.setState({ artistPanelIsOpen: true, selectedArtist: artist });
   }
 
-  _resize = () => {
-    this.setState({
-      viewport: {
-        ...this.state.viewport,
-        width: this.props.width || window.innerWidth,
-        height: this.props.height || window.innerHeight
-      }
-    });
-  };
-
   _renderArtistMarker = (item, index) => {
     return (
-      <Marker
+      <Feature
         key={`marker-${index}`}
-        longitude={item.longitude}
-        latitude={item.latitude}
-      >
-        <Pin size={20} onClick={() => this.handlePinClick(item)} />
-      </Marker>
+        coordinates={[item.longitude, item.latitude]}
+        onClick={() => this.handlePinClick(item)}
+      />
     );
   };
 
@@ -160,18 +136,7 @@ class App extends Component {
   render() {
     const { viewport } = this.state;
     return (
-      <ReactMapGL
-        {...viewport}
-        mapStyle={mapStyle}
-        mapboxApiAccessToken={token}
-        onViewportChange={this._onViewportChange}
-      >
-        {artists.map(this._renderArtistMarker)}
-
-        <div style={{ position: "absolute", right: 10, top: 10 }}>
-          <NavigationControl onViewportChange={this._onViewportChange} />
-        </div>
-
+      <div>
         <div className="side-panel">
           <div className="subtitle">Stats</div>
 
@@ -245,7 +210,7 @@ class App extends Component {
                 <div className="separator" />
                 <div> {this.state.selectedArtist.location} </div>
                 <div className="artist-stats">
-                  <span className="artist-stats-title">Stream : </span>
+                  <span className="artist-stats-title">Streams : </span>
                   {formatNumber(this.state.selectedArtist.streams)}
                   <span
                     className="artist-stats-title"
@@ -278,7 +243,24 @@ class App extends Component {
             </div>
           )}
         </div>
-      </ReactMapGL>
+        <Map
+          style="mapbox://styles/gsalles/cj9w0uuyk5bth2skpo4j01oyl"
+          containerStyle={{
+            height: "100vh",
+            width: "100vw"
+          }}
+          center={[2.333333, 48.866667]}
+          zoom={[3]}
+        >
+          <Layer
+            type="circle"
+            id="position-marker"
+            paint={POSITION_CIRCLE_PAINT}
+          >
+            {artists.map(this._renderArtistMarker)}
+          </Layer>
+        </Map>
+      </div>
     );
   }
 }
