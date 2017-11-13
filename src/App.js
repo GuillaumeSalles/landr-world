@@ -233,10 +233,30 @@ class App extends Component {
                 src={this.state.selectedArtist.picture}
               />
               <div className="artist-social">
-                <img src={facebook} />
-                <img src={twitter} />
-                <img src={soundcloud} />
-                <img src={youtube} />
+                <img
+                  src={facebook}
+                  onClick={() =>
+                    this.state.selectedArtist.facebook &&
+                    window.open(this.state.selectedArtist.facebook)}
+                />
+                <img
+                  src={twitter}
+                  onClick={() =>
+                    this.state.selectedArtist.twitter &&
+                    window.open(this.state.selectedArtist.twitter)}
+                />
+                <img
+                  src={soundcloud}
+                  onClick={() =>
+                    this.state.selectedArtist.soundcloud &&
+                    window.open(this.state.selectedArtist.soundcloud)}
+                />
+                <img
+                  src={youtube}
+                  onClick={() =>
+                    this.state.selectedArtist.youtube &&
+                    window.open(this.state.selectedArtist.youtube)}
+                />
               </div>
               <div className="artist-info">
                 <div style={{ display: "flex", marginBottom: "10px" }}>

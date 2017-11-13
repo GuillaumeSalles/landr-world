@@ -4,7 +4,15 @@ import formatNumber from "./formatNumber";
 
 var artists = new Map();
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
 const itemToArtist = d => {
+  const streams = d["Streams"] || getRandomInt(100, 500000);
+
   var releases = [];
   if (d["Cover release 1"]) {
     releases.push({
@@ -38,13 +46,17 @@ const itemToArtist = d => {
     cover:
       d["Cover release 1"] ||
       "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
-    streams: formatNumber(d["Streams"]),
-    downloads: formatNumber(d["Downloads"]),
+    streams: formatNumber(streams),
+    downloads: formatNumber(streams / 37),
     releases: releases,
     genre: d["Genre"],
     description:
       d["Bio"] ||
-      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights."
+      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights.",
+    facebook: d.Facebook,
+    soundcloud: d.Soundcloud,
+    twitter: d.Twitter,
+    youtube: d.Youtube
   };
 };
 

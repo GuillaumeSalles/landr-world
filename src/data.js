@@ -36,7 +36,7 @@ export default [
     Bio:
       "Hey, I am Valdi Sabev and I make chilled Electronic Music. Follow me and Enjoy the tunes. Check out my Website: www.valdisabev.com",
     Facebook: "https://www.facebook.com/valdisabevofficial/",
-    Twitter: "https://twitter.com/valdisabev/status/917967579456688129",
+    Twitter: "https://twitter.com/valdisabev",
     Soundcloud: "https://soundcloud.com/valdisabev",
     Youtube: "",
     Streams: 30600,

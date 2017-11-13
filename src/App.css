@@ -44,6 +44,7 @@ input {
 
 .stat-value {
   font-size: 48px;
+  line-height: 36px;
   font-family: Sailec-Bold, Arial, Helvetica, sans-serif;
 }
 
