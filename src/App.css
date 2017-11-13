@@ -88,6 +88,7 @@ input {
 
 .artist-cover {
   width: 100%;
+  transform: translateY(-100px);
 }
 
 .artist-picture {

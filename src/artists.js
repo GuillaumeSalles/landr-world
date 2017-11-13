@@ -1,6 +1,5 @@
 import data from "./data";
 import defaultImage from "./Artboard Copy 4.png";
-import formatNumber from "./formatNumber";
 
 var artists = new Map();
 
@@ -46,8 +45,8 @@ const itemToArtist = d => {
     cover:
       d["Cover release 1"] ||
       "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
-    streams: formatNumber(streams),
-    downloads: formatNumber(streams / 37),
+    streams: streams,
+    downloads: streams / 37,
     releases: releases,
     genre: d["Genre"],
     description:

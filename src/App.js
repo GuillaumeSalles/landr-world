@@ -164,7 +164,9 @@ class App extends Component {
             {topFiveArtists.map(artist => (
               <div className="artist-container">
                 <div className="artist-name">{artist.name}</div>
-                <div className="artist-streams">{artist.streams}</div>
+                <div className="artist-streams">
+                  {formatNumber(artist.streams)}
+                </div>
               </div>
             ))}
           </div>
@@ -275,14 +277,14 @@ class App extends Component {
                 <div> {this.state.selectedArtist.location} </div>
                 <div className="artist-stats">
                   <span className="artist-stats-title">Streams </span>
-                  {this.state.selectedArtist.streams}
+                  {formatNumber(this.state.selectedArtist.streams)}
                   <span
                     className="artist-stats-title"
                     style={{ marginLeft: "10px" }}
                   >
                     Downloads {" "}
                   </span>
-                  {this.state.selectedArtist.downloads}
+                  {formatNumber(this.state.selectedArtist.downloads)}
                 </div>
 
                 <div

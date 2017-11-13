@@ -15,9 +15,11 @@ export default [
     Streams: 4200000,
     Downloads: "",
     "Release 1": "https://open.spotify.com/track/5LyTC7Pvu7Bo2WCSw6X5pj",
+    "Release Name 1": "Croco Croc",
     "Cover release 1":
       "https://api2.landr.com/distribution/api/v1/distributions/adfe3d74-7c3b-403a-bf5f-e3bd93eb5177/cover?width=360&height=360&_timestamp=",
     "Release 2": "https://open.spotify.com/track/4auECpxeYE41XSI6YnVCVN",
+    "Release Name 2": "Melrose",
     "Cover release 2":
       "https://api2.landr.com/distribution/api/v1/distributions/6b470412-404b-490f-8c73-7d1b0c7e46f6/cover?width=360&height=360&_timestamp=",
     Genre: "Hip-Hop / Rap",
