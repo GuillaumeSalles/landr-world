@@ -1,24 +1,32 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import pin from "./Pin.svg";
+import "./MyFontsWebfontsKit.css";
 import "./App.css";
 import "mapbox-gl/dist/mapbox-gl.css";
-import items from "./data";
 import close from "./ic_close_black_24px.svg";
 import youtube from "./youtube.svg";
 import soundcloud from "./soundcloud.svg";
 import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
-import defaultImage from "./Artboard Copy 4.png";
-import ReactMapboxGl, { Layer, Feature, Marker } from "react-mapbox-gl";
+import ReactMapboxGl, {
+  Layer,
+  Feature,
+  Marker,
+  Cluster
+} from "react-mapbox-gl";
+import artists from "./artists";
+import formatNumber from "./formatNumber";
+import ArtistsList from "./ArtistsList";
 
-const POSITION_CIRCLE_PAINT = {
-  "circle-stroke-width": 5,
-  "circle-radius": 5,
-  "circle-blur": 0,
-  "circle-color": "#84E0E0",
-  "circle-stroke-color": "#5BD5D5",
-  "circle-stroke-opacity": 0.5
-};
+const artistsArray = Array.from(artists.values());
+const topFiveArtists = [
+  artists.get("868d4fa7-dfaf-4d3f-ae3d-5f6e598f94bc"),
+  artists.get("b042f1cb-0b7f-4dc5-88e4-e4f285633b64"),
+  artists.get("62d1df32-315c-4732-b3b4-1551a99ec342"),
+  artists.get("ceba79c7-6f34-4647-98fa-0526cfefb60c"),
+  artists.get("6c30ae88-4a14-416e-a341-6d3185ec813b")
+];
 
 const token =
   "pk.eyJ1IjoiZ3NhbGxlcyIsImEiOiJjajl0OHZlaGcweWFzMzNqemUwMzRxeXpwIn0.RpgPgPCUEQv88iMEpMSGVA";
@@ -27,137 +35,136 @@ const Map = ReactMapboxGl({
   accessToken: token
 });
 
-const navStyle = {
-  position: "absolute",
-  top: 0,
-  left: 0,
-  padding: "10px"
-};
-
-const artists = items.map(d => {
-  var releases = [];
-  if (d["Cover release 1"]) {
-    releases.push({
-      cover: d["Cover release 1"],
-      link: d["Release 1"],
-      name: d["Release Name 1"]
-    });
-  }
-  if (d["Cover release 2"]) {
-    releases.push({
-      cover: d["Cover release 2"],
-      link: d["Release 2"],
-      name: d["Release Name 2"]
-    });
-  }
-  if (d["Cover release 3"]) {
-    releases.push({
-      cover: d["Cover release 3"],
-      link: d["Release 3"],
-      name: d["Release Name 3"]
-    });
-  }
-  return {
-    name: d["Artist name"],
-    latitude: d.Latitude,
-    longitude: d.Longitude,
-    releases: [],
-    picture: d["Artist picture"] || defaultImage,
-    cover:
-      d["Cover release 1"] ||
-      "http://illusion.scene360.com/wp-content/uploads/2014/10/computergraphics-album-covers-2014-03.jpg",
-    streams: d["Streams"],
-    downloads: d["Downloads"],
-    releases: releases,
-    genre: d["Genre"],
-    description:
-      d["Bio"] ||
-      "Hardly anybody has brought electronic music from Berlin to the farthest flung corners of the world with more passion and enthusiasm than these two heavyweights."
-  };
-});
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-}
-
-function formatNumber(number) {
-  if (number == null) {
-    number = getRandomInt(100, 10000000);
-  }
-
-  if (number < 1000) {
-    return number;
-  }
-
-  if (number < 1000000) {
-    return (number / 1000).toFixed(1) + "k";
-  }
-
-  return (number / 1000000).toFixed(1) + "m";
-}
-
 function take(items, number) {
   const result = [];
   for (var i = 0; i < number; i++) {
-    result.push(items[i]);
+    result.push(items[number]);
   }
   return result;
+}
+
+function clusterSize(nbOfPoints) {
+  return Math.min(30 + nbOfPoints * 5, 70);
+}
+
+function getCenter(state) {
+  if (state.selectedArtist) {
+    return [state.selectedArtist.longitude, state.selectedArtist.latitude];
+  }
+
+  if (state.selectedArtists) {
+    const firstArtist = artists.get(state.selectedArtists[0]);
+    return [firstArtist.longitude, firstArtist.latitude];
+  }
+
+  return [2.333333, 48.866667];
 }
 
 class App extends Component {
   state = {
     selectedArtist: null,
-    artistPanelIsOpen: false
+    artistPanelIsOpen: false,
+    selectedArtists: null
   };
 
   handlePinClick(artist) {
-    this.setState({ artistPanelIsOpen: true, selectedArtist: artist });
+    this.setState({
+      artistPanelIsOpen: true,
+      selectedArtist: artist,
+      selectedArtists: null
+    });
   }
 
   _renderArtistMarker = (item, index) => {
     return (
-      <Feature
-        key={`marker-${index}`}
+      <Marker
+        key={item.id}
         coordinates={[item.longitude, item.latitude]}
         onClick={() => this.handlePinClick(item)}
-      />
+      >
+        <img src={pin} />
+      </Marker>
     );
   };
 
   closeArtistPanel = () => {
-    this.setState({ artistPanelIsOpen: null });
+    this.setState({ artistPanelIsOpen: false });
     setTimeout(() => {
-      this.setState({ selectedArtist: null });
+      this.setState({ selectedArtist: null, selectedArtists: null });
     }, 300);
   };
+
+  clusterMarker = (coordinates, pointCount, getLeaves) => (
+    <Marker
+      key={coordinates.toString()}
+      coordinates={coordinates}
+      style={{
+        width: clusterSize(pointCount),
+        height: clusterSize(pointCount),
+        borderRadius: "50%",
+        backgroundColor: "#84E0E0",
+        opacity: 0.5,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        cursor: "pointer"
+      }}
+      onClick={() => {
+        this.setState({
+          selectedArtists: getLeaves().map(l => l.key),
+          selectedArtist: null,
+          artistPanelIsOpen: true
+        });
+      }}
+    />
+  );
 
   render() {
     const { viewport } = this.state;
     return (
       <div>
+        <svg
+          style={{
+            position: "absolute",
+            left: "36px",
+            top: "42px",
+            zIndex: 2,
+            color: "white"
+          }}
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>icn-logo_landr-30</title>
+          <g
+            stroke="currentColor"
+            strokeWidth="1.5"
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path d="M26.75 18c0 6.628-5.372 12-12 12s-12-5.372-12-12 5.372-12 12-12 12 5.372 12 12z" />
+            <path d="M33.25 18c0 6.628-5.372 12-12 12s-12-5.372-12-12 5.372-12 12-12 12 5.372 12 12z" />
+          </g>
+        </svg>
         <div className="side-panel">
-          <div className="subtitle">Stats</div>
-
           <div className="stat">
-            <div className="stat-value">{formatNumber(12000)}</div>
+            <div className="stat-value">{formatNumber(13200000)}</div>
             <div className="stat-title">Artists</div>
           </div>
 
           <div className="stat">
-            <div className="stat-value">{formatNumber(3120000)}</div>
-            <div className="stat-title">streams</div>
+            <div className="stat-value">{formatNumber(65700000)}</div>
+            <div className="stat-title">Streams</div>
           </div>
 
           <div className="top-artists">
             <div className="subtitle">Top Artists</div>
-            {take(artists, 5).map(artist => (
+            {topFiveArtists.map(artist => (
               <div className="artist-container">
                 <div className="artist-name">{artist.name}</div>
-                <div className="artist-streams">
-                  {formatNumber(artist.streams)}
-                </div>
+                <div className="artist-streams">{artist.streams}</div>
               </div>
             ))}
           </div>
@@ -170,6 +177,43 @@ class App extends Component {
               : "translateX(540px)"
           }}
         >
+          {this.state.selectedArtists && (
+            <div>
+              <button
+                className="artist-panel-close"
+                onClick={this.closeArtistPanel}
+              >
+                <img src={close} />
+              </button>
+
+              <div className="city">
+                {artists.get(this.state.selectedArtists[0]).city}
+              </div>
+
+              <div className="artist-stats" style={{ margin: "36px 42px" }}>
+                <span className="artist-stats-title">Streams </span>
+                5.7m
+                <span
+                  className="artist-stats-title"
+                  style={{ marginLeft: "60px" }}
+                >
+                  Downloads{" "}
+                </span>
+                23.4k
+              </div>
+              <div
+                style={{
+                  height: "1px",
+                  width: "100%",
+                  backgroundColor: "#DDE1E4"
+                }}
+              />
+
+              <ArtistsList
+                artists={this.state.selectedArtists.map(id => artists.get(id))}
+              />
+            </div>
+          )}
           {this.state.selectedArtist && (
             <div>
               <button
@@ -210,15 +254,15 @@ class App extends Component {
                 <div className="separator" />
                 <div> {this.state.selectedArtist.location} </div>
                 <div className="artist-stats">
-                  <span className="artist-stats-title">Streams : </span>
-                  {formatNumber(this.state.selectedArtist.streams)}
+                  <span className="artist-stats-title">Streams </span>
+                  {this.state.selectedArtist.streams}
                   <span
                     className="artist-stats-title"
                     style={{ marginLeft: "10px" }}
                   >
-                    Downloads : {" "}
+                    Downloads {" "}
                   </span>
-                  {formatNumber(this.state.selectedArtist.downloads)}
+                  {this.state.selectedArtist.downloads}
                 </div>
 
                 <div
@@ -249,16 +293,12 @@ class App extends Component {
             height: "100vh",
             width: "100vw"
           }}
-          center={[2.333333, 48.866667]}
+          center={getCenter(this.state)}
           zoom={[3]}
         >
-          <Layer
-            type="circle"
-            id="position-marker"
-            paint={POSITION_CIRCLE_PAINT}
-          >
-            {artists.map(this._renderArtistMarker)}
-          </Layer>
+          <Cluster ClusterMarkerFactory={this.clusterMarker}>
+            {artistsArray.map(this._renderArtistMarker)}
+          </Cluster>
         </Map>
       </div>
     );

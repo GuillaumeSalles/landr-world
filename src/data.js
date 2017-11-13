@@ -351,15 +351,6 @@ export default [
     Longitude: -84.39994938
   },
   {
-    "User ID": "6c30ae88-4a14-416e-a341-6d3185ec813b",
-    "Artist name": "Julio Berga Navarro - AsociaciÃ³n ASMET Music (G98690480)",
-    Email: "the9751@gmail.com",
-    Pays: "Spain",
-    Ville: "Valencia",
-    Latitude: 39.48501752,
-    Longitude: -0.400012046
-  },
-  {
     "User ID": "2cd61014-2e6d-46ed-90a4-b1acd87be5af",
     "Artist name": "John Wessel",
     Email: "johnnyboy1224@att.net",
@@ -556,455 +547,455 @@ export default [
     Ville: "Bethlehem",
     Latitude: -28.21958372,
     Longitude: 28.29996741
+  },
+  {
+    "User ID": "f84cb751-b4b6-4219-b780-c9393e2c4ba3",
+    "Artist name": "Jay",
+    Email: "jaybbrancaccio@gmail.com",
+    Pays: "United States",
+    Ville: "San Antonio",
+    Latitude: -33.59951373,
+    Longitude: -71.60998071
+  },
+  {
+    "User ID": "808534ac-9ca4-4935-8ab4-fb982eac6b90",
+    "Artist name": "Kamal A La Prod",
+    Email: "kamal.hitmaker@gmail.com",
+    Pays: "France",
+    Ville: "Orleans",
+    Latitude: 47.90042116,
+    Longitude: 1.900028441
+  },
+  {
+    "User ID": "bb1e7e09-fab3-4230-93b9-de0224afbb08",
+    "Artist name": "Sean M.",
+    Email: "the.official.sean.m.more.band@gmail.com",
+    Pays: "United States",
+    Ville: "Portland",
+    Latitude: -38.33999957,
+    Longitude: 141.5900032
+  },
+  {
+    "User ID": "e40b7f2b-3002-4246-87a9-b0a65fd67f92",
+    "Artist name": "Ruy h Alfonso",
+    Email: "ruyalfonso@outlook.com",
+    Pays: "Mexico",
+    Ville: "Monterrey",
+    Latitude: 25.66999514,
+    Longitude: -100.3299848
+  },
+  {
+    "User ID": "30992443-5445-44a9-b272-bde36f2e1a94",
+    "Artist name": "Cognitive Energy",
+    Email: "ole.studio@gmail.com",
+    Pays: "United States",
+    Ville: "San Francisco",
+    Latitude: -31.43003375,
+    Longitude: -62.08996749
+  },
+  {
+    "User ID": "9da76d4a-128c-441c-b678-8819b2bb2f23",
+    "Artist name": "paul hughes",
+    Email: "hugheseyp@gmail.com",
+    Pays: "United Kingdom",
+    Ville: "Blackpool",
+    Latitude: 53.83039512,
+    Longitude: -3.050005332
+  },
+  {
+    "User ID": "c87383e1-338e-4d94-ad7e-5bdefd310d6f",
+    "Artist name": "Andrea Torti",
+    Email: "leaf90t@gmail.com",
+    Pays: "Italy",
+    Ville: "Rome",
+    Latitude: 41.89595563,
+    Longitude: 12.48325842
+  },
+  {
+    "User ID": "2261f7c2-974d-481e-a924-ba31f4b42e8b",
+    "Artist name": "MAINLINE PUBLISHINGLLC",
+    Email: "JOEBROWN.JB706@GMAIL.COM",
+    Pays: "United States",
+    Ville: "Saint Paul",
+    Latitude: 44.9537029,
+    Longitude: -93.0899578
+  },
+  {
+    "User ID": "32f0c24e-3fb2-4313-bf1b-810273d2c49b",
+    "Artist name": "Heroin Trismegistus",
+    Email: "httwilliams2@gmail.com",
+    Pays: "United States",
+    Ville: "Tucson",
+    Latitude: 32.20499676,
+    Longitude: -110.8899862
+  },
+  {
+    "User ID": "f382c9b8-7329-417d-b7b3-e799e918b74b",
+    "Artist name": "Lewis Blanchard III",
+    Email: "wallyblanchard@gmail.com",
+    Pays: "United States",
+    Ville: "Atlanta",
+    Latitude: 33.83001385,
+    Longitude: -84.39994938
+  },
+  {
+    "User ID": "96a18fb5-ed99-4806-b7ba-ea5bcee4810c",
+    "Artist name": "Bryan",
+    Email: "list@kevaevents.com",
+    Pays: "United States",
+    Ville: "Atlanta",
+    Latitude: 33.83001385,
+    Longitude: -84.39994938
+  },
+  {
+    "User ID": "5a619694-4bb8-424f-8f9f-3ecdb6f82ca0",
+    "Artist name": "DjGab",
+    Email: "djgabmusic@hotmail.com",
+    Pays: "Canada",
+    Ville: "Victoriaville",
+    Latitude: 46.05040489,
+    Longitude: -71.96667729
+  },
+  {
+    "User ID": "6b531776-d11b-4bbb-9eb4-c6f1b8c07fbf",
+    "Artist name": "Jonathan Kazanova",
+    Email: "jonathankazanova@gmail.com",
+    Pays: "Canada",
+    Ville: "Kelowna",
+    Latitude: 49.89998903,
+    Longitude: -119.4833118
+  },
+  {
+    "User ID": "157ac66b-993d-4d4d-94d9-9fcc996683ca",
+    "Artist name": "Brendan",
+    Email: "brendanmurphygoodtimes@hotmail.com",
+    Pays: "Australia",
+    Ville: "Sydney",
+    Latitude: -33.92001097,
+    Longitude: 151.1851798
+  },
+  {
+    "User ID": "1bcc0fa6-7ec1-41ab-924d-65ac19223c43",
+    "Artist name": "Jammer Roberts",
+    Email: "the_racer_x@yahoo.com",
+    Pays: "United States",
+    Ville: "Las Vegas",
+    Latitude: 35.59701194,
+    Longitude: -105.2225027
+  },
+  {
+    "User ID": "a053a9dd-7942-4c37-8f8b-da4cc6ce7034",
+    "Artist name": "Vernell",
+    Email: "vispimptight@hotmail.com",
+    Pays: "United States",
+    Ville: "San Diego",
+    Latitude: 32.82002382,
+    Longitude: -117.1799899
+  },
+  {
+    "User ID": "393da437-ba3d-43a7-a814-9eab74b40955",
+    "Artist name": "Francis",
+    Email: "francismezy@gmail.com",
+    Pays: "United States",
+    Ville: "Boston",
+    Latitude: 42.32996014,
+    Longitude: -71.07001367
+  },
+  {
+    "User ID": "08133186-a091-4be4-9333-f9b7e8c0b37f",
+    "Artist name": "Philip Cristancho",
+    Email: "cristanchophilip@yahoo.com",
+    Pays: "United States",
+    Ville: "Elgin",
+    Latitude: 42.03946108,
+    Longitude: -88.28991866
+  },
+  {
+    "User ID": "02ed3dff-98fd-4515-8b05-7dfbd81ff4eb",
+    "Artist name": "Anthony Terrell",
+    Email: "socooller1@yahoo.com",
+    Pays: "United States",
+    Ville: "Los Angeles",
+    Latitude: -37.46000161,
+    Longitude: -72.35998661
+  },
+  {
+    "User ID": "a6f31d10-efa2-4f3f-83e9-2db35885d39d",
+    "Artist name": "Jesse Alvarez",
+    Email: "invinsabledj@aol.com",
+    Pays: "United States",
+    Ville: "New York",
+    Latitude: 40.74997906,
+    Longitude: -73.98001693
+  },
+  {
+    "User ID": "928d382a-aecd-49c6-9168-409080757a59",
+    "Artist name": "Ken Keller",
+    Email: "Kaikentherapper@yahoo.com",
+    Pays: "United States",
+    Ville: "San Francisco",
+    Latitude: -31.43003375,
+    Longitude: -62.08996749
+  },
+  {
+    "User ID": "5b804a49-279d-4c2c-8ffb-c4282cb6f04a",
+    "Artist name": "Jevon Lewis",
+    Email: "haggndass@yahoo.com",
+    Pays: "United States",
+    Ville: "New York",
+    Latitude: 40.74997906,
+    Longitude: -73.98001693
+  },
+  {
+    "User ID": "87401e20-ac5d-4bc2-9270-da1d71bec7c9",
+    "Artist name": "Htet Aung",
+    Email: "mxximusrecords@gmail.com",
+    Pays: "Myanmar (Burma)",
+    Ville: "Rangoon",
+    Latitude: 16.7833541,
+    Longitude: 96.16667761
+  },
+  {
+    "User ID": "5ceaa864-3473-4e24-a8d5-0ed74aade493",
+    "Artist name": "templeboybeatz",
+    Email: "templeboybeatz@gmail.com",
+    Pays: "United Kingdom",
+    Ville: "Birmingham",
+    Latitude: 52.47497398,
+    Longitude: -1.919996787
+  },
+  {
+    "User ID": "a86a5b0e-03f8-4972-959d-e4e677712b09",
+    "Artist name": "ladarius cherry",
+    Email: "dariuscherry@hotmail.com",
+    Pays: "United States",
+    Ville: "New York",
+    Latitude: 40.74997906,
+    Longitude: -73.98001693
+  },
+  {
+    "User ID": "288e0f05-d313-47d8-9159-d4a4e3a6acf5",
+    "Artist name": "Sygns Media, LLC.",
+    Email: "VIAUDAJ@GMAIL.COM",
+    Pays: "United States",
+    Ville: "Salt lake city",
+    Latitude: 40.7750163,
+    Longitude: -111.9300519
+  },
+  {
+    "User ID": "da0c31d2-588f-41c1-b247-35604797b673",
+    "Artist name": "David Runyon",
+    Email: "runyondavid13@yahoo.com",
+    Pays: "United States",
+    Ville: "Los Angeles",
+    Latitude: -37.46000161,
+    Longitude: -72.35998661
+  },
+  {
+    "User ID": "217f79b5-fd04-489b-883f-5b7daa4b2c1a",
+    "Artist name": "Jerry",
+    Email: "hjhatley@cox.net",
+    Pays: "United States",
+    Ville: "Tulsa",
+    Latitude: 36.12000327,
+    Longitude: -95.93002079
+  },
+  {
+    "User ID": "613a23b5-f744-4ae5-8fc7-f9b32918254f",
+    "Artist name": "Washington",
+    Email: "wpsfilho@uol.com.br",
+    Pays: "Brazil",
+    Ville: "Rio de Janeiro",
+    Latitude: -22.92502317,
+    Longitude: -43.22502079
+  },
+  {
+    "User ID": "126c8e81-75f6-498f-8ef2-46b621c7c0c5",
+    "Artist name": "Kivvy",
+    Email: "kivvyspears@gmail.com",
+    Pays: "United States",
+    Ville: "New York",
+    Latitude: 40.74997906,
+    Longitude: -73.98001693
+  },
+  {
+    "User ID": "98127e58-a862-43f2-9ee7-ca70b533ab96",
+    "Artist name": "fortune",
+    Email: "hovcreate@gmail.com",
+    Pays: "South Africa",
+    Ville: "Durban",
+    Latitude: -29.865013,
+    Longitude: 30.98001054
+  },
+  {
+    "User ID": "d9c90339-148b-44bd-81fd-043f9c3c18c1",
+    "Artist name": "Michael",
+    Email: "michaelhandkins@aol.com",
+    Pays: "United States",
+    Ville: "Austin",
+    Latitude: 30.26694969,
+    Longitude: -97.74277836
+  },
+  {
+    "User ID": "33f83bef-1c8c-4442-be13-366481de8961",
+    "Artist name": "MiKE 2BANGAZ",
+    Email: "mikebanga200@icloud.com",
+    Pays: "United States",
+    Ville: "Las Vegas",
+    Latitude: 35.59701194,
+    Longitude: -105.2225027
+  },
+  {
+    "User ID": "96b2dee9-537e-4e43-98dd-856869e84239",
+    "Artist name": "Jay Pitt",
+    Email: "bookjaypitt@gmail.com",
+    Pays: "United States",
+    Ville: "Los Angeles",
+    Latitude: -37.46000161,
+    Longitude: -72.35998661
+  },
+  {
+    "User ID": "7fb8cef2-a097-4c5c-83bf-d3cc1f80fe63",
+    "Artist name": "Colin",
+    Email: "zallyzulu@gmail.com",
+    Pays: "United States",
+    Ville: "San Francisco",
+    Latitude: -31.43003375,
+    Longitude: -62.08996749
+  },
+  {
+    "User ID": "b267cd3f-c52c-415f-a07d-a81a3fec6b13",
+    "Artist name": "Mason Jones",
+    Email: "nocturnalanimalsmusic@gmail.com",
+    Pays: "United States",
+    Ville: "Memphis",
+    Latitude: 35.1199868,
+    Longitude: -89.99999516
+  },
+  {
+    "User ID": "f8e4a1de-4edd-492e-9d9c-c859764a2f0b",
+    "Artist name": "Jim",
+    Email: "jimmmphs8@aol.com",
+    Pays: "United States",
+    Ville: "Memphis",
+    Latitude: 35.1199868,
+    Longitude: -89.99999516
+  },
+  {
+    "User ID": "0ce340b0-34a6-4fc8-86d9-f0acc7acc977",
+    "Artist name": "Elvis Loyo",
+    Email: "elvispromotion@gmail.com",
+    Pays: "Colombia",
+    Ville: "Bogota",
+    Latitude: 4.596423563,
+    Longitude: -74.08334396
+  },
+  {
+    "User ID": "8f741d63-dc64-404c-b005-244bacc75616",
+    "Artist name": "ViTTi ViTTi",
+    Email: "vittivitti@outlook.com",
+    Pays: "United States",
+    Ville: "Phoenix",
+    Latitude: 33.53997988,
+    Longitude: -112.0699917
+  },
+  {
+    "User ID": "d038daf7-add0-4582-95e8-7d9774449072",
+    "Artist name": "tshamshizo",
+    Email: "243street@gmail.com",
+    Pays: "Congo (DRC)",
+    Ville: "Kinshasa",
+    Latitude: -4.329724102,
+    Longitude: 15.31497188
+  },
+  {
+    "User ID": "ec8ba997-ced0-4dbd-9e44-e51ac0fcb480",
+    "Artist name": "Christopher Burford",
+    Email: "christopheradamjordan@hotmail.com",
+    Pays: "United Kingdom",
+    Ville: "Brighton",
+    Latitude: 50.83034568,
+    Longitude: -0.169974407
+  },
+  {
+    "User ID": "79d2a351-44b3-4f15-96df-a7efccba25c4",
+    "Artist name": "Sonny Nguyen",
+    Email: "sonny.nguyen96@gmail.com",
+    Pays: "Netherlands",
+    Ville: "The hague",
+    Latitude: 52.08003684,
+    Longitude: 4.269961302
+  },
+  {
+    "User ID": "d56a5f1c-c237-4fad-bd10-0ee3d789fb00",
+    "Artist name": "Walt Gschiel",
+    Email: "loveinstereo@live.ca",
+    Pays: "Canada",
+    Ville: "Victoria",
+    Latitude: -32.61001341,
+    Longitude: -60.17998071
+  },
+  {
+    "User ID": "2763fe86-6af9-41fa-88d6-f0dec6d4285b",
+    "Artist name": "The Jazzhunters Mike",
+    Email: "djmikehoward@gmail.com",
+    Pays: "United Kingdom",
+    Ville: "Brighton",
+    Latitude: 50.83034568,
+    Longitude: -0.169974407
+  },
+  {
+    "User ID": "6d3bc290-5b84-4f7e-88e7-86aa462bb3fb",
+    "Artist name": "Pete",
+    Email: "andyhathaway888@gmail.com",
+    Pays: "United Kingdom",
+    Ville: "Leeds",
+    Latitude: 53.83000755,
+    Longitude: -1.580017539
+  },
+  {
+    "User ID": "d5a8ffb9-392f-421c-a743-22a952ff501f",
+    "Artist name": "Joshua",
+    Email: "fidembeats@gmail.com",
+    Pays: "United States",
+    Ville: "Washington, D.C.",
+    Latitude: 38.89954938,
+    Longitude: -77.00941858
+  },
+  {
+    "User ID": "d6dd03a0-dc15-4e9e-a602-acfdee8ad6f9",
+    "Artist name": "Khriz Hauge Gonzalez",
+    Email: "donluney@gmail.com",
+    Pays: "Norway",
+    Ville: "Trondheim",
+    Latitude: 63.41665753,
+    Longitude: 10.41666622
+  },
+  {
+    "User ID": "7c929a8e-9bfa-42e3-839d-96c68c35693f",
+    "Artist name": "James Rex",
+    Email: "jamoro21@yahoo.com",
+    Pays: "United States",
+    Ville: "Seattle",
+    Latitude: 47.57000205,
+    Longitude: -122.339985
+  },
+  {
+    "User ID": "d9c00bd2-c2a2-4e75-b7ff-548fd8c4e337",
+    "Artist name": "Amk Ati",
+    Email: "beatmaster9@gmail.com",
+    Pays: "Switzerland",
+    Ville: "Lausanne",
+    Latitude: 46.53042727,
+    Longitude: 6.650022744
+  },
+  {
+    "User ID": "2a0f8190-cb91-44cf-a60a-46458f838e89",
+    "Artist name": "Don",
+    Email: "donnybass61@gmail.com",
+    Pays: "United States",
+    Ville: "Phoenix",
+    Latitude: 33.53997988,
+    Longitude: -112.0699917
   }
-  // {
-  //   "User ID": "f84cb751-b4b6-4219-b780-c9393e2c4ba3",
-  //   "Artist name": "Jay",
-  //   Email: "jaybbrancaccio@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "San Antonio",
-  //   Latitude: -33.59951373,
-  //   Longitude: -71.60998071
-  // },
-  // {
-  //   "User ID": "808534ac-9ca4-4935-8ab4-fb982eac6b90",
-  //   "Artist name": "Kamal A La Prod",
-  //   Email: "kamal.hitmaker@gmail.com",
-  //   Pays: "France",
-  //   Ville: "Orleans",
-  //   Latitude: 47.90042116,
-  //   Longitude: 1.900028441
-  // },
-  // {
-  //   "User ID": "bb1e7e09-fab3-4230-93b9-de0224afbb08",
-  //   "Artist name": "Sean M.",
-  //   Email: "the.official.sean.m.more.band@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Portland",
-  //   Latitude: -38.33999957,
-  //   Longitude: 141.5900032
-  // },
-  // {
-  //   "User ID": "e40b7f2b-3002-4246-87a9-b0a65fd67f92",
-  //   "Artist name": "Ruy h Alfonso",
-  //   Email: "ruyalfonso@outlook.com",
-  //   Pays: "Mexico",
-  //   Ville: "Monterrey",
-  //   Latitude: 25.66999514,
-  //   Longitude: -100.3299848
-  // },
-  // {
-  //   "User ID": "30992443-5445-44a9-b272-bde36f2e1a94",
-  //   "Artist name": "Cognitive Energy",
-  //   Email: "ole.studio@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "San Francisco",
-  //   Latitude: -31.43003375,
-  //   Longitude: -62.08996749
-  // },
-  // {
-  //   "User ID": "9da76d4a-128c-441c-b678-8819b2bb2f23",
-  //   "Artist name": "paul hughes",
-  //   Email: "hugheseyp@gmail.com",
-  //   Pays: "United Kingdom",
-  //   Ville: "Blackpool",
-  //   Latitude: 53.83039512,
-  //   Longitude: -3.050005332
-  // },
-  // {
-  //   "User ID": "c87383e1-338e-4d94-ad7e-5bdefd310d6f",
-  //   "Artist name": "Andrea Torti",
-  //   Email: "leaf90t@gmail.com",
-  //   Pays: "Italy",
-  //   Ville: "Rome",
-  //   Latitude: 41.89595563,
-  //   Longitude: 12.48325842
-  // },
-  // {
-  //   "User ID": "2261f7c2-974d-481e-a924-ba31f4b42e8b",
-  //   "Artist name": "MAINLINE PUBLISHINGLLC",
-  //   Email: "JOEBROWN.JB706@GMAIL.COM",
-  //   Pays: "United States",
-  //   Ville: "Saint Paul",
-  //   Latitude: 44.9537029,
-  //   Longitude: -93.0899578
-  // },
-  // {
-  //   "User ID": "32f0c24e-3fb2-4313-bf1b-810273d2c49b",
-  //   "Artist name": "Heroin Trismegistus",
-  //   Email: "httwilliams2@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Tucson",
-  //   Latitude: 32.20499676,
-  //   Longitude: -110.8899862
-  // },
-  // {
-  //   "User ID": "f382c9b8-7329-417d-b7b3-e799e918b74b",
-  //   "Artist name": "Lewis Blanchard III",
-  //   Email: "wallyblanchard@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Atlanta",
-  //   Latitude: 33.83001385,
-  //   Longitude: -84.39994938
-  // },
-  // {
-  //   "User ID": "96a18fb5-ed99-4806-b7ba-ea5bcee4810c",
-  //   "Artist name": "Bryan",
-  //   Email: "list@kevaevents.com",
-  //   Pays: "United States",
-  //   Ville: "Atlanta",
-  //   Latitude: 33.83001385,
-  //   Longitude: -84.39994938
-  // },
-  // {
-  //   "User ID": "5a619694-4bb8-424f-8f9f-3ecdb6f82ca0",
-  //   "Artist name": "DjGab",
-  //   Email: "djgabmusic@hotmail.com",
-  //   Pays: "Canada",
-  //   Ville: "Victoriaville",
-  //   Latitude: 46.05040489,
-  //   Longitude: -71.96667729
-  // },
-  // {
-  //   "User ID": "6b531776-d11b-4bbb-9eb4-c6f1b8c07fbf",
-  //   "Artist name": "Jonathan Kazanova",
-  //   Email: "jonathankazanova@gmail.com",
-  //   Pays: "Canada",
-  //   Ville: "Kelowna",
-  //   Latitude: 49.89998903,
-  //   Longitude: -119.4833118
-  // },
-  // {
-  //   "User ID": "157ac66b-993d-4d4d-94d9-9fcc996683ca",
-  //   "Artist name": "Brendan",
-  //   Email: "brendanmurphygoodtimes@hotmail.com",
-  //   Pays: "Australia",
-  //   Ville: "Sydney",
-  //   Latitude: -33.92001097,
-  //   Longitude: 151.1851798
-  // },
-  // {
-  //   "User ID": "1bcc0fa6-7ec1-41ab-924d-65ac19223c43",
-  //   "Artist name": "Jammer Roberts",
-  //   Email: "the_racer_x@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "Las Vegas",
-  //   Latitude: 35.59701194,
-  //   Longitude: -105.2225027
-  // },
-  // {
-  //   "User ID": "a053a9dd-7942-4c37-8f8b-da4cc6ce7034",
-  //   "Artist name": "Vernell",
-  //   Email: "vispimptight@hotmail.com",
-  //   Pays: "United States",
-  //   Ville: "San Diego",
-  //   Latitude: 32.82002382,
-  //   Longitude: -117.1799899
-  // },
-  // {
-  //   "User ID": "393da437-ba3d-43a7-a814-9eab74b40955",
-  //   "Artist name": "Francis",
-  //   Email: "francismezy@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Boston",
-  //   Latitude: 42.32996014,
-  //   Longitude: -71.07001367
-  // },
-  // {
-  //   "User ID": "08133186-a091-4be4-9333-f9b7e8c0b37f",
-  //   "Artist name": "Philip Cristancho",
-  //   Email: "cristanchophilip@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "Elgin",
-  //   Latitude: 42.03946108,
-  //   Longitude: -88.28991866
-  // },
-  // {
-  //   "User ID": "02ed3dff-98fd-4515-8b05-7dfbd81ff4eb",
-  //   "Artist name": "Anthony Terrell",
-  //   Email: "socooller1@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "Los Angeles",
-  //   Latitude: -37.46000161,
-  //   Longitude: -72.35998661
-  // },
-  // {
-  //   "User ID": "a6f31d10-efa2-4f3f-83e9-2db35885d39d",
-  //   "Artist name": "Jesse Alvarez",
-  //   Email: "invinsabledj@aol.com",
-  //   Pays: "United States",
-  //   Ville: "New York",
-  //   Latitude: 40.74997906,
-  //   Longitude: -73.98001693
-  // },
-  // {
-  //   "User ID": "928d382a-aecd-49c6-9168-409080757a59",
-  //   "Artist name": "Ken Keller",
-  //   Email: "Kaikentherapper@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "San Francisco",
-  //   Latitude: -31.43003375,
-  //   Longitude: -62.08996749
-  // },
-  // {
-  //   "User ID": "5b804a49-279d-4c2c-8ffb-c4282cb6f04a",
-  //   "Artist name": "Jevon Lewis",
-  //   Email: "haggndass@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "New York",
-  //   Latitude: 40.74997906,
-  //   Longitude: -73.98001693
-  // },
-  // {
-  //   "User ID": "87401e20-ac5d-4bc2-9270-da1d71bec7c9",
-  //   "Artist name": "Htet Aung",
-  //   Email: "mxximusrecords@gmail.com",
-  //   Pays: "Myanmar (Burma)",
-  //   Ville: "Rangoon",
-  //   Latitude: 16.7833541,
-  //   Longitude: 96.16667761
-  // },
-  // {
-  //   "User ID": "5ceaa864-3473-4e24-a8d5-0ed74aade493",
-  //   "Artist name": "templeboybeatz",
-  //   Email: "templeboybeatz@gmail.com",
-  //   Pays: "United Kingdom",
-  //   Ville: "Birmingham",
-  //   Latitude: 52.47497398,
-  //   Longitude: -1.919996787
-  // },
-  // {
-  //   "User ID": "a86a5b0e-03f8-4972-959d-e4e677712b09",
-  //   "Artist name": "ladarius cherry",
-  //   Email: "dariuscherry@hotmail.com",
-  //   Pays: "United States",
-  //   Ville: "New York",
-  //   Latitude: 40.74997906,
-  //   Longitude: -73.98001693
-  // },
-  // {
-  //   "User ID": "288e0f05-d313-47d8-9159-d4a4e3a6acf5",
-  //   "Artist name": "Sygns Media, LLC.",
-  //   Email: "VIAUDAJ@GMAIL.COM",
-  //   Pays: "United States",
-  //   Ville: "Salt lake city",
-  //   Latitude: 40.7750163,
-  //   Longitude: -111.9300519
-  // },
-  // {
-  //   "User ID": "da0c31d2-588f-41c1-b247-35604797b673",
-  //   "Artist name": "David Runyon",
-  //   Email: "runyondavid13@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "Los Angeles",
-  //   Latitude: -37.46000161,
-  //   Longitude: -72.35998661
-  // },
-  // {
-  //   "User ID": "217f79b5-fd04-489b-883f-5b7daa4b2c1a",
-  //   "Artist name": "Jerry",
-  //   Email: "hjhatley@cox.net",
-  //   Pays: "United States",
-  //   Ville: "Tulsa",
-  //   Latitude: 36.12000327,
-  //   Longitude: -95.93002079
-  // },
-  // {
-  //   "User ID": "613a23b5-f744-4ae5-8fc7-f9b32918254f",
-  //   "Artist name": "Washington",
-  //   Email: "wpsfilho@uol.com.br",
-  //   Pays: "Brazil",
-  //   Ville: "Rio de Janeiro",
-  //   Latitude: -22.92502317,
-  //   Longitude: -43.22502079
-  // },
-  // {
-  //   "User ID": "126c8e81-75f6-498f-8ef2-46b621c7c0c5",
-  //   "Artist name": "Kivvy",
-  //   Email: "kivvyspears@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "New York",
-  //   Latitude: 40.74997906,
-  //   Longitude: -73.98001693
-  // },
-  // {
-  //   "User ID": "98127e58-a862-43f2-9ee7-ca70b533ab96",
-  //   "Artist name": "fortune",
-  //   Email: "hovcreate@gmail.com",
-  //   Pays: "South Africa",
-  //   Ville: "Durban",
-  //   Latitude: -29.865013,
-  //   Longitude: 30.98001054
-  // },
-  // {
-  //   "User ID": "d9c90339-148b-44bd-81fd-043f9c3c18c1",
-  //   "Artist name": "Michael",
-  //   Email: "michaelhandkins@aol.com",
-  //   Pays: "United States",
-  //   Ville: "Austin",
-  //   Latitude: 30.26694969,
-  //   Longitude: -97.74277836
-  // },
-  // {
-  //   "User ID": "33f83bef-1c8c-4442-be13-366481de8961",
-  //   "Artist name": "MiKE 2BANGAZ",
-  //   Email: "mikebanga200@icloud.com",
-  //   Pays: "United States",
-  //   Ville: "Las Vegas",
-  //   Latitude: 35.59701194,
-  //   Longitude: -105.2225027
-  // },
-  // {
-  //   "User ID": "96b2dee9-537e-4e43-98dd-856869e84239",
-  //   "Artist name": "Jay Pitt",
-  //   Email: "bookjaypitt@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Los Angeles",
-  //   Latitude: -37.46000161,
-  //   Longitude: -72.35998661
-  // },
-  // {
-  //   "User ID": "7fb8cef2-a097-4c5c-83bf-d3cc1f80fe63",
-  //   "Artist name": "Colin",
-  //   Email: "zallyzulu@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "San Francisco",
-  //   Latitude: -31.43003375,
-  //   Longitude: -62.08996749
-  // },
-  // {
-  //   "User ID": "b267cd3f-c52c-415f-a07d-a81a3fec6b13",
-  //   "Artist name": "Mason Jones",
-  //   Email: "nocturnalanimalsmusic@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Memphis",
-  //   Latitude: 35.1199868,
-  //   Longitude: -89.99999516
-  // },
-  // {
-  //   "User ID": "f8e4a1de-4edd-492e-9d9c-c859764a2f0b",
-  //   "Artist name": "Jim",
-  //   Email: "jimmmphs8@aol.com",
-  //   Pays: "United States",
-  //   Ville: "Memphis",
-  //   Latitude: 35.1199868,
-  //   Longitude: -89.99999516
-  // },
-  // {
-  //   "User ID": "0ce340b0-34a6-4fc8-86d9-f0acc7acc977",
-  //   "Artist name": "Elvis Loyo",
-  //   Email: "elvispromotion@gmail.com",
-  //   Pays: "Colombia",
-  //   Ville: "Bogota",
-  //   Latitude: 4.596423563,
-  //   Longitude: -74.08334396
-  // },
-  // {
-  //   "User ID": "8f741d63-dc64-404c-b005-244bacc75616",
-  //   "Artist name": "ViTTi ViTTi",
-  //   Email: "vittivitti@outlook.com",
-  //   Pays: "United States",
-  //   Ville: "Phoenix",
-  //   Latitude: 33.53997988,
-  //   Longitude: -112.0699917
-  // },
-  // {
-  //   "User ID": "d038daf7-add0-4582-95e8-7d9774449072",
-  //   "Artist name": "tshamshizo",
-  //   Email: "243street@gmail.com",
-  //   Pays: "Congo (DRC)",
-  //   Ville: "Kinshasa",
-  //   Latitude: -4.329724102,
-  //   Longitude: 15.31497188
-  // },
-  // {
-  //   "User ID": "ec8ba997-ced0-4dbd-9e44-e51ac0fcb480",
-  //   "Artist name": "Christopher Burford",
-  //   Email: "christopheradamjordan@hotmail.com",
-  //   Pays: "United Kingdom",
-  //   Ville: "Brighton",
-  //   Latitude: 50.83034568,
-  //   Longitude: -0.169974407
-  // },
-  // {
-  //   "User ID": "79d2a351-44b3-4f15-96df-a7efccba25c4",
-  //   "Artist name": "Sonny Nguyen",
-  //   Email: "sonny.nguyen96@gmail.com",
-  //   Pays: "Netherlands",
-  //   Ville: "The hague",
-  //   Latitude: 52.08003684,
-  //   Longitude: 4.269961302
-  // },
-  // {
-  //   "User ID": "d56a5f1c-c237-4fad-bd10-0ee3d789fb00",
-  //   "Artist name": "Walt Gschiel",
-  //   Email: "loveinstereo@live.ca",
-  //   Pays: "Canada",
-  //   Ville: "Victoria",
-  //   Latitude: -32.61001341,
-  //   Longitude: -60.17998071
-  // },
-  // {
-  //   "User ID": "2763fe86-6af9-41fa-88d6-f0dec6d4285b",
-  //   "Artist name": "The Jazzhunters Mike",
-  //   Email: "djmikehoward@gmail.com",
-  //   Pays: "United Kingdom",
-  //   Ville: "Brighton",
-  //   Latitude: 50.83034568,
-  //   Longitude: -0.169974407
-  // },
-  // {
-  //   "User ID": "6d3bc290-5b84-4f7e-88e7-86aa462bb3fb",
-  //   "Artist name": "Pete",
-  //   Email: "andyhathaway888@gmail.com",
-  //   Pays: "United Kingdom",
-  //   Ville: "Leeds",
-  //   Latitude: 53.83000755,
-  //   Longitude: -1.580017539
-  // },
-  // {
-  //   "User ID": "d5a8ffb9-392f-421c-a743-22a952ff501f",
-  //   "Artist name": "Joshua",
-  //   Email: "fidembeats@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Washington, D.C.",
-  //   Latitude: 38.89954938,
-  //   Longitude: -77.00941858
-  // },
-  // {
-  //   "User ID": "d6dd03a0-dc15-4e9e-a602-acfdee8ad6f9",
-  //   "Artist name": "Khriz Hauge Gonzalez",
-  //   Email: "donluney@gmail.com",
-  //   Pays: "Norway",
-  //   Ville: "Trondheim",
-  //   Latitude: 63.41665753,
-  //   Longitude: 10.41666622
-  // },
-  // {
-  //   "User ID": "7c929a8e-9bfa-42e3-839d-96c68c35693f",
-  //   "Artist name": "James Rex",
-  //   Email: "jamoro21@yahoo.com",
-  //   Pays: "United States",
-  //   Ville: "Seattle",
-  //   Latitude: 47.57000205,
-  //   Longitude: -122.339985
-  // },
-  // {
-  //   "User ID": "d9c00bd2-c2a2-4e75-b7ff-548fd8c4e337",
-  //   "Artist name": "Amk Ati",
-  //   Email: "beatmaster9@gmail.com",
-  //   Pays: "Switzerland",
-  //   Ville: "Lausanne",
-  //   Latitude: 46.53042727,
-  //   Longitude: 6.650022744
-  // },
-  // {
-  //   "User ID": "2a0f8190-cb91-44cf-a60a-46458f838e89",
-  //   "Artist name": "Don",
-  //   Email: "donnybass61@gmail.com",
-  //   Pays: "United States",
-  //   Ville: "Phoenix",
-  //   Latitude: 33.53997988,
-  //   Longitude: -112.0699917
-  // }
 ];

@@ -1,0 +1,46 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3481525, 2017-11-10T15:31:31-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Sailec-Bold by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/bold/
+ * 
+ * Webfont: Sailec-Light by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/light/
+ * 
+ * Webfont: Sailec-Medium by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/medium/
+ * 
+ * Webfont: Sailec-Regular by Type Dynamic
+ * URL: https://www.myfonts.com/fonts/typedynamic/sailec/regular/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3481525
+ * Licensed pageviews: 200,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 by Type Dynamic. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/351fb5");
+
+  
+@font-face {font-family: 'Sailec-Bold';src: url('webfonts/351FB5_0_0.eot');src: url('webfonts/351FB5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/351FB5_0_0.woff2') format('woff2'),url('webfonts/351FB5_0_0.woff') format('woff'),url('webfonts/351FB5_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Light';src: url('webfonts/351FB5_1_0.eot');src: url('webfonts/351FB5_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/351FB5_1_0.woff2') format('woff2'),url('webfonts/351FB5_1_0.woff') format('woff'),url('webfonts/351FB5_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Medium';src: url('webfonts/351FB5_2_0.eot');src: url('webfonts/351FB5_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/351FB5_2_0.woff2') format('woff2'),url('webfonts/351FB5_2_0.woff') format('woff'),url('webfonts/351FB5_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Sailec-Regular';src: url('webfonts/351FB5_3_0.eot');src: url('webfonts/351FB5_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/351FB5_3_0.woff2') format('woff2'),url('webfonts/351FB5_3_0.woff') format('woff'),url('webfonts/351FB5_3_0.ttf') format('truetype');}
+ 

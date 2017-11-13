@@ -1,0 +1,42 @@
+.artists-list-container {
+  padding: 36px 42px;
+}
+
+.artists-list-header {
+  display: grid;
+  grid-template-columns: 65px auto 70px 70px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #adb7bf;
+}
+
+.artists-list-item {
+  display: grid;
+  grid-template-columns: 65px auto 70px 70px;
+  margin-bottom: 15px;
+}
+
+.artists-list-item .picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.artists-list-item .name {
+  font-family: Sailec-Bold, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  align-self: center;
+}
+
+.artists-list-item .streams {
+  font-size: 14px;
+  align-self: center;
+  color: #8d9aa5;
+}
+
+.artists-list-item .downloads {
+  font-size: 14px;
+  align-self: center;
+  color: #8d9aa5;
+}

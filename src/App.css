@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Sailec-Regular, Arial, Helvetica, sans-serif;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 .control-panel {
@@ -29,6 +33,9 @@ input {
 }
 
 .side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   z-index: 1;
   position: absolute;
   height: 100%;
@@ -61,7 +68,7 @@ input {
 }
 
 .artist-container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .artist-name {
@@ -81,6 +88,7 @@ input {
   background: white;
   right: 0;
   transition: all 300ms ease-out;
+  overflow-y: hidden;
 }
 
 .artist-cover-container {
@@ -134,13 +142,13 @@ input {
 
 .artist-stats-title {
   font-size: 18px;
-  font-weight: bold;
+  font-family: Sailec-Bold, Arial, Helvetica, sans-serif;
   color: black;
 }
 
 .artist-stats {
   font-size: 24px;
-  color: #adb7bf;
+  color: #8d9aa5;
   margin: 20px 0px;
 }
 
@@ -176,4 +184,10 @@ input {
   height: 100px;
   width: 100px;
   margin-right: 20px;
+}
+
+.city {
+  padding: 36px 42px 0px 42px;
+  font-size: 30px;
+  font-family: Sailec-Bold, Arial, Helvetica, sans-serif;
 }
